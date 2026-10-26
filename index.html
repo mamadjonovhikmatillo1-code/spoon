@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoon — Mazali ta’mlardan bahramand bo‘ling</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images (5).jpg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">spoon<span>.</span></a>
+
+        <nav class="nav" id="nav">
+            <a href="#home">Bosh sahifa</a>
+            <a href="#menu">Menyu</a>
+            <a href="#about">Biz haqimizda</a>
+            <a href="#contact">Aloqa</a>
+        </nav>
+
+        <a href="#menu" class="header-btn">Buyurtma berish ↗</a>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">✳ YANGI TAOMLAR, AJOYIB KAYFIYAT</span>
+                <h1>Mazali taom.<br>Ajoyib <span>kayfiyat.</span></h1>
+                <p>Yangi masalliqlar, yorqin ta’mlar va mehr bilan tayyorlangan taomlar. Sizning yangi sevimli taomingiz sizni kutmoqda.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="primary-btn">Menyuni ko‘rish ↗</a>
+                    <a href="#about" class="text-btn">Bizning hikoyamiz →</a>
+                </div>
+
+                <div class="hero-bottom">
+                    <div class="avatars">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop"
+                            alt="Mijoz">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop"
+                            alt="Mijoz">
+                        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=80&h=80&fit=crop"
+                            alt="Mijoz">
+                    </div>
+                    <div>
+                        <strong>5 dan 4,9 ★★★★★</strong>
+                        <p class="small-text">2 000 dan ortiq taom ishqibozlari tanlovi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1000&auto=format&fit=crop&q=85"
+                    alt="Yangi va rang-barang foydali taom">
+                <div class="floating-card">
+                    <span class="floating-icon">🥗</span>
+                    <div>
+                        <strong>Har kuni yangi</strong>
+                        <p>Tabiiy masalliqlardan tayyorlanadi</p>
+                    </div>
+                </div>
+                <div class="round-sticker">MEHR BILAN<br>TAYYORLANGAN ✳</div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div>
+                <span>01 / BIZNING TAMOYILLAR</span>
+                <h2>Har bir luqmada<br>yangilik.</h2>
+            </div>
+            <div class="category-item">
+                <span class="category-icon">🥬</span>
+                <h3>Yangi masalliqlar</h3>
+                <p>Taomingizga faqat eng sara mahsulotlar qo‘shiladi.</p>
+            </div>
+            <div class="category-item">
+                <span class="category-icon">👨‍🍳</span>
+                <h3>Mehr bilan tayyorlanadi</h3>
+                <p>Oshxonamiz jamoasi har bir taomni mehr bilan tayyorlaydi.</p>
+            </div>
+            <div class="category-item">
+                <span class="category-icon">⚡</span>
+                <h3>Tezkor yetkazib berish</h3>
+                <p>Kerakli vaqtda mazali taomlar eshigingizda.</p>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">✳ ENG MAZALI TAOMLAR</span>
+                    <h2>Ta’mi bilan<br>maftun <span>etadi.</span></h2>
+                </div>
+                <p>Foydali salatlardan tortib, mazali burgerlargacha — har qanday ishtaha uchun nimadir topiladi.</p>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">Barcha taomlar</button>
+                <button class="filter-btn" data-category="salad">Salatlar</button>
+                <button class="filter-btn" data-category="burger">Burgerlar</button>
+                <button class="filter-btn" data-category="pizza">Pitsalar</button>
+            </div>
+
+            <div class="food-grid">
+                <article class="food-card" data-category="salad">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&auto=format&fit=crop&q=80"
+                            alt="Yangi ko‘katli salat">
+                        <span class="food-tag">YANGI TA’M</span>
+                        <button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button>
+                    </div>
+                    <div class="food-info">
+                        <div>
+                            <h3>Yashil bog‘ salati</h3>
+                            <p>Avokado, ko‘katlar, urug‘lar</p>
+                        </div>
+                        <strong>$8.50</strong>
+                    </div>
+                    <button class="add-btn">Buyurtmaga qo‘shish <span>+</span></button>
+                </article>
+
+                <article class="food-card" data-category="burger">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80"
+                            alt="Shirali pishloqli burger">
+                        <span class="food-tag">ENG KO‘P TANLANGAN</span>
+                        <button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button>
+                    </div>
+                    <div class="food-info">
+                        <div>
+                            <h3>Klassik burger</h3>
+                            <p>Mol go‘shti, cheddar pishlog‘i, maxsus sous</p>
+                        </div>
+                        <strong>$10.00</strong>
+                    </div>
+                    <button class="add-btn">Buyurtmaga qo‘shish <span>+</span></button>
+                </article>
+
+                <article class="food-card" data-category="pizza">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=600&auto=format&fit=crop&q=80"
+                            alt="Yangi pishirilgan pitsa">
+                        <span class="food-tag">OSHXONANING TAVSIYASI</span>
+                        <button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button>
+                    </div>
+                    <div class="food-info">
+                        <div>
+                            <h3>Margarita pitsasi</h3>
+                            <p>Pomidor, motsarella, rayhon</p>
+                        </div>
+                        <strong>$9.00</strong>
+                    </div>
+                    <button class="add-btn">Buyurtmaga qo‘shish <span>+</span></button>
+                </article>
+
+                <article class="food-card" data-category="salad">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&auto=format&fit=crop&q=80"
+                            alt="Sog‘lom va rang-barang salat">
+                        <span class="food-tag">FOYDALI TANLOV</span>
+                        <button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button>
+                    </div>
+                    <div class="food-info">
+                        <div>
+                            <h3>Kamalak salati</h3>
+                            <p>Sabzavotlar, donlar, qaymoqli sous</p>
+                        </div>
+                        <strong>$7.50</strong>
+                    </div>
+                    <button class="add-btn">Buyurtmaga qo‘shish <span>+</span></button>
+                </article>
+            </div>
+            <p class="cart-message" id="cartMessage" aria-live="polite">Buyurtmangizga mazali taom qo‘shishingiz mumkin.</p>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=900&auto=format&fit=crop&q=85"
+                    alt="Birgalikda baham ko‘rish uchun tayyorlangan mazali taomlar">
+                <div class="about-sticker">100%<br>YAXSHI<br>KAYFIYAT</div>
+            </div>
+            <div class="about-content">
+                <span class="eyebrow">✳ BIZ HAQIMIZDA QISQACHA</span>
+                <h2>Bu shunchaki taom emas.<br>Bu o‘zgacha <span>tuyg‘u.</span></h2>
+                <p>Spoon jamoasi eng yaxshi lahzalar mazali taomlar atrofida o‘tishiga ishonadi. Shu sababli har bir dasturxonga yangi masalliqlar, ijodiy retseptlar va quvonch ulashamiz.</p>
+                <p>Sodda masalliqlar. Ajoyib ta’m. Baxtli insonlar.</p>
+                <a href="#contact" class="primary-btn">Biz bilan tanishing ↗</a>
+            </div>
+        </section>
+
+        <section class="cta-section" id="contact">
+            <span class="eyebrow">SIZNI KUTAYOTGAN YANGI SEVIMLI TAOM</span>
+            <h2>Ishtahangiz ochildimi?</h2>
+            <p>Ta’m bilish sezgilaringiz Spoon taomlarini tatib ko‘rishni istayapti.</p>
+            <a href="#menu" class="dark-btn">Keling, mazali taomlanamiz ↗</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#" class="logo">spoon<span>.</span></a>
+        <p>Mazali taom, ajoyib kayfiyat. © 2026 Spoon.</p>
+        <p>Number: +998 50 030 54 50</p>
+        <div>
+            <a href="#home">Instagram</a>
+            <a href="#contact">Aloqa</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

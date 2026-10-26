@@ -1,0 +1,769 @@
+:root {
+    --cream: #faf7ef;
+    --green: #193d2b;
+    --orange: #ff7043;
+    --yellow: #f5d86e;
+    --text: #252b24;
+    --muted: #777970;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: var(--cream);
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+.header {
+    height: 88px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cream);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #eae6db;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: var(--green);
+}
+
+.logo span {
+    color: var(--orange);
+}
+
+.nav {
+    display: flex;
+    gap: 35px;
+}
+
+.nav a,
+.footer a {
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav a:hover,
+.footer a:hover {
+    color: var(--orange);
+}
+
+.header-btn,
+.primary-btn {
+    background: var(--green);
+    color: white;
+    border-radius: 50px;
+    padding: 15px 24px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.header-btn:hover,
+.primary-btn:hover {
+    background: var(--orange);
+    transform: translateY(-3px);
+}
+
+.menu-toggle {
+    display: none;
+    border: 0;
+    background: none;
+    font-size: 25px;
+}
+
+.hero {
+    padding: 75px 7% 90px;
+    display: grid;
+    grid-template-columns: 1fr 0.95fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: var(--orange);
+}
+
+.hero h1,
+.section-heading h2,
+.about-content h2,
+.cta-section h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    margin: 23px 0;
+}
+
+.hero h1 span,
+.section-heading h2 span,
+.about-content h2 span {
+    color: var(--orange);
+    font-style: italic;
+}
+
+.hero-content>p,
+.about-content>p {
+    max-width: 450px;
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.9;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.text-btn {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.hero-bottom {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 45px;
+}
+
+.avatars {
+    display: flex;
+    padding-left: 5px;
+}
+
+.avatars img {
+    width: 39px;
+    height: 39px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--cream);
+    margin-left: -8px;
+}
+
+.hero-bottom strong {
+    font-size: 13px;
+}
+
+.small-text {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image>img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 48% 48% 25px 25px;
+}
+
+.floating-card {
+    position: absolute;
+    bottom: 35px;
+    left: -40px;
+    background: white;
+    padding: 17px 20px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    box-shadow: 0 12px 40px #193d2b14;
+}
+
+.floating-icon {
+    background: #eaf1d9;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 25px;
+}
+
+.floating-card strong {
+    font-size: 12px;
+}
+
+.floating-card p {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 5px;
+}
+
+.round-sticker {
+    position: absolute;
+    top: 30px;
+    right: -25px;
+    background: var(--yellow);
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.6;
+    transform: rotate(12deg);
+}
+
+.categories {
+    padding: 55px 7%;
+    background: #f0eee3;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.categories>div:first-child>span {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--orange);
+    font-weight: 800;
+}
+
+.categories h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    margin-top: 12px;
+}
+
+.category-icon {
+    font-size: 28px;
+}
+
+.category-item h3 {
+    font-size: 14px;
+    margin: 14px 0 8px;
+}
+
+.category-item p {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.menu-section {
+    padding: 100px 7%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+}
+
+.section-heading h2,
+.about-content h2 {
+    font-size: clamp(43px, 5vw, 60px);
+}
+
+.section-heading>p {
+    max-width: 340px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0 35px;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid #dddace;
+    padding: 11px 21px;
+    border-radius: 50px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--green);
+    color: white;
+    border-color: var(--green);
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.food-card {
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px #193d2b12;
+}
+
+.food-image {
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.food-card:hover .food-image img {
+    transform: scale(1.06);
+}
+
+.food-tag {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    background: var(--yellow);
+    padding: 7px 9px;
+    border-radius: 20px;
+    font-size: 8px;
+    font-weight: 800;
+}
+
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    font-size: 20px;
+}
+
+.heart.liked {
+    color: var(--orange);
+}
+
+.food-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 8px;
+    padding: 17px 5px 15px;
+}
+
+.food-info h3 {
+    font-size: 13px;
+}
+
+.food-info p {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 7px;
+}
+
+.food-info strong {
+    font-size: 13px;
+    color: var(--green);
+    white-space: nowrap;
+}
+
+.add-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #e8e5da;
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.add-btn span {
+    background: var(--green);
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 17px;
+}
+
+.add-btn:hover {
+    background: var(--green);
+    color: white;
+}
+
+.cart-message {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.about-section {
+    padding: 70px 7% 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 90px;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    display: block;
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.about-sticker {
+    position: absolute;
+    bottom: -25px;
+    right: -25px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--orange);
+    color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.4;
+    transform: rotate(10deg);
+}
+
+.about-content>p {
+    margin-bottom: 15px;
+}
+
+.about-content .primary-btn {
+    margin-top: 20px;
+}
+
+.cta-section {
+    margin: 0 7% 80px;
+    background: var(--yellow);
+    border-radius: 30px;
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: clamp(45px, 6vw, 70px);
+    margin: 15px 0;
+}
+
+.cta-section>p {
+    font-size: 14px;
+    margin-bottom: 27px;
+}
+
+.dark-btn {
+    display: inline-block;
+    background: var(--green);
+    color: white;
+    padding: 16px 25px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.dark-btn:hover {
+    background: var(--orange);
+    transform: translateY(-3px);
+}
+
+.footer {
+    padding: 30px 7%;
+    border-top: 1px solid #e7e3d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer .logo {
+    font-size: 30px;
+}
+
+.footer p {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.footer>div {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 1000px) {
+    .hero {
+        gap: 35px;
+    }
+
+    .hero-image>img {
+        height: 420px;
+    }
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .food-image {
+        height: 280px;
+    }
+
+    .about-section {
+        gap: 45px;
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        height: 72px;
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .header-btn {
+        margin-left: auto;
+        margin-right: 15px;
+        padding: 11px 15px;
+        font-size: 12px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background: var(--cream);
+        padding: 25px;
+        flex-direction: column;
+        gap: 22px;
+        border-bottom: 1px solid #e7e3d9;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .hero {
+        padding: 55px 5% 70px;
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .hero-image {
+        margin: 0 10px;
+    }
+
+    .hero-image>img {
+        height: 370px;
+    }
+
+    .floating-card {
+        left: -10px;
+        bottom: 20px;
+        padding: 12px;
+    }
+
+    .round-sticker {
+        right: -12px;
+        width: 78px;
+        height: 78px;
+        font-size: 9px;
+    }
+
+    .categories {
+        padding: 45px 6%;
+        gap: 30px 18px;
+    }
+
+    .categories h2 {
+        font-size: 27px;
+    }
+
+    .category-item h3 {
+        font-size: 12px;
+    }
+
+    .category-item p {
+        font-size: 11px;
+    }
+
+    .menu-section {
+        padding: 70px 5%;
+    }
+
+    .section-heading {
+        display: block;
+    }
+
+    .section-heading>p {
+        margin-bottom: 25px;
+    }
+
+    .section-heading h2,
+    .about-content h2 {
+        font-size: 46px;
+    }
+
+    .filters {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 10px 14px;
+    }
+
+    .food-grid {
+        gap: 12px;
+    }
+
+    .food-image {
+        height: 170px;
+    }
+
+    .food-info {
+        display: block;
+        padding: 13px 4px;
+    }
+
+    .food-info h3 {
+        font-size: 12px;
+    }
+
+    .food-info strong {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .food-info p {
+        min-height: 28px;
+        line-height: 1.5;
+    }
+
+    .food-tag {
+        font-size: 7px;
+        padding: 6px;
+    }
+
+    .add-btn {
+        padding: 9px;
+        font-size: 10px;
+    }
+
+    .add-btn span {
+        width: 22px;
+        height: 22px;
+    }
+
+    .about-section {
+        padding: 40px 6% 80px;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .about-image img {
+        height: 330px;
+    }
+
+    .cta-section {
+        margin: 0 5% 50px;
+        padding: 55px 15px;
+    }
+
+    .footer {
+        padding: 30px 5%;
+        flex-wrap: wrap;
+    }
+
+    .footer p {
+        order: 3;
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}
